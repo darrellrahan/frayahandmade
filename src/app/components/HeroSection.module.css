@@ -1,0 +1,88 @@
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  width: 100vw; /* Set to 100% of viewport width */
+  height: 1000px; /* You can adjust this height as needed */
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 100%; /* Set to 100% of the parent container (heroSection) */
+  height: 260px; /* You can adjust this height as needed */
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.hover_overlay:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hover_overlay:hover .overlay a {
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.overlay a {
+  display: none;
+}
+
+.heroText {
+  font-family: lato, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  transition: opacity 1s ease-in-out;
+  color: white;
+}
+
+.heroKatalogContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.heroKatalog {
+  grid-row: 2;
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadeInAnimation 2s infinite;
+}
+
+.inner {
+  transition: all 0.3s linear;
+}
+
+.outer:hover .inner {
+  top: -1rem;
+  bottom: -1rem;
+  right: -1rem;
+  left: -1rem;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

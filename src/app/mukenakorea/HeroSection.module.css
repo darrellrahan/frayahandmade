@@ -1,0 +1,24 @@
+
+.hover_overlay:hover .overlay { 
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hover_overlay:hover .overlay a {
+    display: inline-block;
+} 
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.overlay a {
+    display: none;
+}
