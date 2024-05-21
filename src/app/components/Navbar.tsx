@@ -18,9 +18,6 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/img/logoo.png" alt="gambar" width={100} height={102} />
       </Link>
-      <button className="lg:hidden">
-        <Image src="/navbar.svg" alt="navbar" width={50} height={50} />
-      </button>
       <Link href="/" className="hidden lg:inline-block">
         Home
       </Link>
